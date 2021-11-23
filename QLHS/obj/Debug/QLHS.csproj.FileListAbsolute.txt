@@ -1,0 +1,17 @@
+D:\Work\AppDev\Bookstore\QLHS\bin\Debug\QLHS.exe.config
+D:\Work\AppDev\Bookstore\QLHS\bin\Debug\QLHS.exe
+D:\Work\AppDev\Bookstore\QLHS\bin\Debug\QLHS.pdb
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.csprojAssemblyReference.cache
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.Form1.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.Properties.Resources.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.csproj.GenerateResource.cache
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.csproj.CoreCompileInputs.cache
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.exe
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.pdb
+D:\Work\AppDev\Bookstore\QLHS\bin\Debug\EntityFramework.dll
+D:\Work\AppDev\Bookstore\QLHS\bin\Debug\EntityFramework.SqlServer.dll
+D:\Work\AppDev\Bookstore\QLHS\bin\Debug\EntityFramework.xml
+D:\Work\AppDev\Bookstore\QLHS\bin\Debug\EntityFramework.SqlServer.xml
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.csproj.CopyComplete
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmThemSach.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.ChiTietSach.resources

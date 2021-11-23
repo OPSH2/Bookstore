@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +55,95 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookstoreDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookstoreDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookstoreDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookstoreDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BookstoreDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookstoreDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CaLamViec.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietSach.Designer.cs">
+      <DependentUpon>ChiTietSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CT_CaLamViec.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CT_HD.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMucSach.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMucVanPhongPham.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DsClasses.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsClasses.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DsClasses.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entities.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThemSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemSach.Designer.cs">
+      <DependentUpon>frmThemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPham.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>DsClasses.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChiTietSach.resx">
+      <DependentUpon>ChiTietSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemSach.resx">
+      <DependentUpon>frmThemSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +152,49 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EntityDeploy Include="Entities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Entities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="BookstoreDataSet.xsc">
+      <DependentUpon>BookstoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookstoreDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookstoreDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookstoreDataSet.xss">
+      <DependentUpon>BookstoreDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BookstoreDataSet1.xsc">
+      <DependentUpon>BookstoreDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BookstoreDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookstoreDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookstoreDataSet1.xss">
+      <DependentUpon>BookstoreDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="BookstoreDataSet2.xsc">
+      <DependentUpon>BookstoreDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="BookstoreDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BookstoreDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BookstoreDataSet2.xss">
+      <DependentUpon>BookstoreDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Entities.edmx.diagram">
+      <DependentUpon>Entities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +207,58 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DsClasses.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Entities.edmx</DependentUpon>
+      <LastGenOutput>DsClasses.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DsClasses.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Entities.edmx</DependentUpon>
+      <LastGenOutput>DsClasses.cs</LastGenOutput>
+    </Content>
+    <None Include="img\ICON\add-icon-png-2471-Windows.ico" />
+    <None Include="img\ICON\add-icon-png-2471.png" />
+    <None Include="img\ICON\ThongKe60.jpg" />
+    <None Include="img\ICON\Thay-the-hinh-dai-dien-tai-khoan-nguoi-dung-mac.png" />
+    <None Include="img\ICON\QLTTB60.png" />
+    <None Include="img\ICON\QLP60.png" />
+    <None Include="img\ICON\QLNV60.jpg" />
+    <None Include="img\ICON\QLMH60.jpg" />
+    <None Include="img\ICON\QLKH60.png" />
+    <None Include="img\ICON\QLKH.png" />
+    <None Include="img\ICON\profle.png" />
+    <None Include="img\ICON\Phong60.jpg" />
+    <None Include="img\ICON\mic.png" />
+    <None Include="img\ICON\GioiThieu60.png" />
+    <None Include="img\ICON\gear.png" />
+    <None Include="img\ICON\gear %281%291.png" />
+    <None Include="img\ICON\gear %281%29.png" />
+    <None Include="img\ICON\GDTN60.png" />
+    <None Include="img\ICON\folder_home.png" />
+    <None Include="img\ICON\e8c2564b98a251fc08b3.jpg" />
+    <None Include="img\ICON\download %281%29.png" />
+    <None Include="img\ICON\door %281%29.png" />
+    <None Include="img\ICON\DMK60.jpg" />
+    <None Include="img\ICON\DangXuat60.jpg" />
+    <None Include="img\ICON\bcac27d9f01739496006.jpg" />
+    <None Include="img\ICON\ae80b42eb0e779b920f6.jpg" />
+    <None Include="img\ICON\3003591479ddb083e9cc.jpg" />
+    <None Include="img\ICON\2472824 %281%29.png" />
+    <None Include="img\ICON\6842bce5b82c7172283d.jpg" />
+    <None Include="img\ICON\3a9df0e20d2bc4759d3a %281%29.jpg" />
+    <None Include="img\ICON\2a359a959e5c57020e4d.jpg" />
+    <None Include="img\ICON\1b04dd1c1ad2d38c8ac3.jpg" />
+    <None Include="img\Nhà Sách.png" />
+    <None Include="img\LOGIN FORM.png" />
+    <None Include="img\hinh-nen-slide-thuyet-trinh-dep-6-1024x738.jpg" />
+    <None Include="img\hinh-nen-powerpoint-de-thuong-theo-chu-de-hoc-tap.jpeg" />
+    <None Include="img\1633280963_920_Hinh-anh-PowerPoint-dep.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

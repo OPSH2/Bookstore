@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/QLHS/DB/Bookstore.mdf
+/QLHS/DB/Bookstore_log.ldf

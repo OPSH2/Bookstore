@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ada679064d48425485a831e08c361431" Name="Diagram1">
+        <EntityTypeShape EntityType="BookstoreModel.CaLamViec" Width="1.5" PointX="1.5" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.CT_CaLamViec" Width="1.5" PointX="3.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.CT_HD" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.DanhMucSach" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.DanhMucVanPhongPham" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.HoaDon" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.KhachHang" Width="1.5" PointX="1.5" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.NhanVien" Width="1.5" PointX="1.5" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.SanPham" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookstoreModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="BookstoreModel.FK_CT_CaLamViec_CaLamViec" ManuallyRouted="false" />
+        <AssociationConnector Association="BookstoreModel.FK_CT_CaLamViec_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="BookstoreModel.FK_CT_HD_HoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="BookstoreModel.FK_CT_HD_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="BookstoreModel.FK_DanhMucSach_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="BookstoreModel.FK_DanhMucVanPhongPham_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="BookstoreModel.FK_HoaDon_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="BookstoreModel.FK_HoaDon_NhanVien" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
