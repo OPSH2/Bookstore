@@ -466,6 +466,7 @@ namespace QLHS
             this.dtgrvwQLSP.Size = new System.Drawing.Size(543, 516);
             this.dtgrvwQLSP.TabIndex = 0;
             this.dtgrvwQLSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvwQLSP_CellClick);
+            this.dtgrvwQLSP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvwQLSP_CellContentClick);
             this.dtgrvwQLSP.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrvwQLSP_CellDoubleClick);
             this.dtgrvwQLSP.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtgrvwQLSP_RowHeaderMouseDoubleClick);
             // 
@@ -940,6 +941,7 @@ namespace QLHS
             this.dtgridvwHD.Name = "dtgridvwHD";
             this.dtgridvwHD.Size = new System.Drawing.Size(544, 507);
             this.dtgridvwHD.TabIndex = 0;
+            this.dtgridvwHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgridvwHD_CellClick);
             // 
             // colMaHD
             // 

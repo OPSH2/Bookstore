@@ -131,5 +131,22 @@ namespace QLHS
             frmThemSanPham frm = new frmThemSanPham();
             frm.Show();
         }
+
+        private void dtgridvwHD_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dtgridvwCTHD.Rows.Clear();
+            con = new SqlConnection(cs);
+            con.Open();
+            adapt = new SqlDataAdapter("select *from dbo.CT_HD where maHD like '%"+ dtgridvwHD.SelectedRows[0].Cells[0].Value.ToString() +"%'", con);
+            dt = new DataTable();
+            adapt.Fill(dt);
+            dtgridvwCTHD.DataSource = dt;
+            con.Close();
+        }
+
+        private void dtgrvwQLSP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
