@@ -1,7 +1,7 @@
 ﻿
 namespace QLHS
 {
-    partial class ChiTietSach
+    partial class frmChiTietSach
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,14 @@ namespace QLHS
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.labeltacgia = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.labelSoLuong = new System.Windows.Forms.Label();
+            this.labelnhaxuatban = new System.Windows.Forms.Label();
+            this.labelngayxuatban = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.labelDonViBan = new System.Windows.Forms.Label();
@@ -42,14 +50,6 @@ namespace QLHS
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.labelSoLuong = new System.Windows.Forms.Label();
-            this.labelnhaxuatban = new System.Windows.Forms.Label();
-            this.labelngayxuatban = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.labeltacgia = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,18 +77,107 @@ namespace QLHS
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Location = new System.Drawing.Point(18, 17);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(928, 494);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chi tiết";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // labeltacgia
+            // 
+            this.labeltacgia.AutoSize = true;
+            this.labeltacgia.BackColor = System.Drawing.Color.Transparent;
+            this.labeltacgia.Location = new System.Drawing.Point(676, 231);
+            this.labeltacgia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labeltacgia.Name = "labeltacgia";
+            this.labeltacgia.Size = new System.Drawing.Size(46, 18);
+            this.labeltacgia.TabIndex = 34;
+            this.labeltacgia.Text = "label8";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Location = new System.Drawing.Point(438, 231);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(60, 18);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "Tác giả:";
+            // 
+            // labelSoLuong
+            // 
+            this.labelSoLuong.AutoSize = true;
+            this.labelSoLuong.BackColor = System.Drawing.Color.Transparent;
+            this.labelSoLuong.Location = new System.Drawing.Point(676, 169);
+            this.labelSoLuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSoLuong.Name = "labelSoLuong";
+            this.labelSoLuong.Size = new System.Drawing.Size(46, 18);
+            this.labelSoLuong.TabIndex = 32;
+            this.labelSoLuong.Text = "label8";
+            // 
+            // labelnhaxuatban
+            // 
+            this.labelnhaxuatban.AutoSize = true;
+            this.labelnhaxuatban.BackColor = System.Drawing.Color.Transparent;
+            this.labelnhaxuatban.Location = new System.Drawing.Point(676, 115);
+            this.labelnhaxuatban.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelnhaxuatban.Name = "labelnhaxuatban";
+            this.labelnhaxuatban.Size = new System.Drawing.Size(46, 18);
+            this.labelnhaxuatban.TabIndex = 31;
+            this.labelnhaxuatban.Text = "label7";
+            // 
+            // labelngayxuatban
+            // 
+            this.labelngayxuatban.AutoSize = true;
+            this.labelngayxuatban.BackColor = System.Drawing.Color.Transparent;
+            this.labelngayxuatban.Location = new System.Drawing.Point(676, 58);
+            this.labelngayxuatban.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelngayxuatban.Name = "labelngayxuatban";
+            this.labelngayxuatban.Size = new System.Drawing.Size(46, 18);
+            this.labelngayxuatban.TabIndex = 30;
+            this.labelngayxuatban.Text = "label6";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Location = new System.Drawing.Point(438, 169);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(96, 18);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Số lượng tồn:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Location = new System.Drawing.Point(438, 115);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 18);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Nhà xuất bản:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Location = new System.Drawing.Point(438, 58);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(105, 18);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Ngày xuất bản:";
             // 
             // btnXoa
             // 
             this.btnXoa.Location = new System.Drawing.Point(441, 401);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(146, 47);
             this.btnXoa.TabIndex = 26;
@@ -98,7 +187,7 @@ namespace QLHS
             // btnCapNhat
             // 
             this.btnCapNhat.Location = new System.Drawing.Point(287, 401);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(146, 47);
             this.btnCapNhat.TabIndex = 25;
@@ -215,103 +304,15 @@ namespace QLHS
             this.label1.TabIndex = 14;
             this.label1.Text = "Mã sản phẩm:";
             // 
-            // labelSoLuong
-            // 
-            this.labelSoLuong.AutoSize = true;
-            this.labelSoLuong.BackColor = System.Drawing.Color.Transparent;
-            this.labelSoLuong.Location = new System.Drawing.Point(676, 169);
-            this.labelSoLuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelSoLuong.Name = "labelSoLuong";
-            this.labelSoLuong.Size = new System.Drawing.Size(46, 18);
-            this.labelSoLuong.TabIndex = 32;
-            this.labelSoLuong.Text = "label8";
-            // 
-            // labelnhaxuatban
-            // 
-            this.labelnhaxuatban.AutoSize = true;
-            this.labelnhaxuatban.BackColor = System.Drawing.Color.Transparent;
-            this.labelnhaxuatban.Location = new System.Drawing.Point(676, 115);
-            this.labelnhaxuatban.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelnhaxuatban.Name = "labelnhaxuatban";
-            this.labelnhaxuatban.Size = new System.Drawing.Size(46, 18);
-            this.labelnhaxuatban.TabIndex = 31;
-            this.labelnhaxuatban.Text = "label7";
-            // 
-            // labelngayxuatban
-            // 
-            this.labelngayxuatban.AutoSize = true;
-            this.labelngayxuatban.BackColor = System.Drawing.Color.Transparent;
-            this.labelngayxuatban.Location = new System.Drawing.Point(676, 58);
-            this.labelngayxuatban.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelngayxuatban.Name = "labelngayxuatban";
-            this.labelngayxuatban.Size = new System.Drawing.Size(46, 18);
-            this.labelngayxuatban.TabIndex = 30;
-            this.labelngayxuatban.Text = "label6";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(438, 169);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 18);
-            this.label9.TabIndex = 29;
-            this.label9.Text = "Số lượng tồn:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(438, 115);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 18);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "Nhà xuất bản:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(438, 58);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(105, 18);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Ngày xuất bản:";
-            // 
-            // labeltacgia
-            // 
-            this.labeltacgia.AutoSize = true;
-            this.labeltacgia.BackColor = System.Drawing.Color.Transparent;
-            this.labeltacgia.Location = new System.Drawing.Point(676, 231);
-            this.labeltacgia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labeltacgia.Name = "labeltacgia";
-            this.labeltacgia.Size = new System.Drawing.Size(46, 18);
-            this.labeltacgia.TabIndex = 34;
-            this.labeltacgia.Text = "label8";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Location = new System.Drawing.Point(438, 231);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 18);
-            this.label13.TabIndex = 33;
-            this.label13.Text = "Tác giả:";
-            // 
-            // ChiTietSach
+            // frmChiTietSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 518);
             this.Controls.Add(this.groupBox3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "ChiTietSach";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "frmChiTietSach";
             this.Text = "ChiTietSach";
             this.Load += new System.EventHandler(this.ChiTietSach_Load);
             this.groupBox3.ResumeLayout(false);

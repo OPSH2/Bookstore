@@ -117,9 +117,19 @@ namespace QLHS
             GoesBetweenForms = dtgrvwQLSP.SelectedRows[0].Cells[0].Value.ToString();
             if (String.Equals(dtgrvwQLSP.SelectedRows[0].Cells[2].Value.ToString(), "Sách                "))
             {
-                ChiTietSach cts = new ChiTietSach();
+                frmChiTietSach cts = new frmChiTietSach();
                 cts.Show();
             }
+            else
+            {
+                
+            }
+        }
+
+        private void btnThemVanPhongPham_Click(object sender, EventArgs e)
+        {
+            frmThemSanPham frm = new frmThemSanPham();
+            frm.Show();
         }
     }
 }

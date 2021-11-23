@@ -73,11 +73,11 @@
     <Compile Include="CaLamViec.cs">
       <DependentUpon>DsClasses.tt</DependentUpon>
     </Compile>
-    <Compile Include="ChiTietSach.cs">
+    <Compile Include="frmChiTietSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ChiTietSach.Designer.cs">
-      <DependentUpon>ChiTietSach.cs</DependentUpon>
+    <Compile Include="frmChiTietSach.Designer.cs">
+      <DependentUpon>frmChiTietSach.cs</DependentUpon>
     </Compile>
     <Compile Include="CT_CaLamViec.cs">
       <DependentUpon>DsClasses.tt</DependentUpon>
@@ -112,11 +112,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChiTietVanPhongPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietVanPhongPham.Designer.cs">
+      <DependentUpon>frmChiTietVanPhongPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemSach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmThemSach.Designer.cs">
       <DependentUpon>frmThemSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemSanPham.Designer.cs">
+      <DependentUpon>frmThemSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="HoaDon.cs">
       <DependentUpon>DsClasses.tt</DependentUpon>
@@ -135,14 +147,20 @@
     <Compile Include="sysdiagram.cs">
       <DependentUpon>DsClasses.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChiTietSach.resx">
-      <DependentUpon>ChiTietSach.cs</DependentUpon>
+    <EmbeddedResource Include="frmChiTietSach.resx">
+      <DependentUpon>frmChiTietSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietVanPhongPham.resx">
+      <DependentUpon>frmChiTietVanPhongPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmThemSach.resx">
       <DependentUpon>frmThemSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemSanPham.resx">
+      <DependentUpon>frmThemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

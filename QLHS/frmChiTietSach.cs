@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QLHS
 {
-    public partial class ChiTietSach : Form
+    public partial class frmChiTietSach : Form
     {
-        public ChiTietSach()
+        public frmChiTietSach()
         {
             InitializeComponent();
         }
@@ -35,6 +35,11 @@ namespace QLHS
                 labelSoLuong.Text = temp1.soLuongTon.ToString();
                 labeltacgia.Text = temp1.tacGia;
             }
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

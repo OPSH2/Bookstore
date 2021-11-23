@@ -318,6 +318,7 @@ namespace QLHS
             this.btnThemVanPhongPham.TabIndex = 27;
             this.btnThemVanPhongPham.Text = "Thêm văn phòng phẩm";
             this.btnThemVanPhongPham.UseVisualStyleBackColor = true;
+            this.btnThemVanPhongPham.Click += new System.EventHandler(this.btnThemVanPhongPham_Click);
             // 
             // btnXoa
             // 
