@@ -502,13 +502,13 @@ namespace QLHS {
                                 this.columnmaNV}, true));
                 this.columnmaNV.AllowDBNull = false;
                 this.columnmaNV.Unique = true;
-                this.columnmaNV.MaxLength = 8;
+                this.columnmaNV.MaxLength = 12;
                 this.columntenNV.MaxLength = 50;
                 this.columnviTri.MaxLength = 2;
                 this.columnsdt.MaxLength = 10;
                 this.columngioiTinh.MaxLength = 3;
                 this.columnemail.MaxLength = 50;
-                this.columnmatkhau.MaxLength = 16;
+                this.columnmatkhau.MaxLength = 32;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

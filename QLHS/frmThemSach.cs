@@ -24,24 +24,31 @@ namespace QLHS
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            var chitietsach = new DanhMucSach();
-            var sanpham = new SanPham();
-            chitietsach.maSP = txtMaSP.Text;
-            chitietsach.tenSP = txtTenSanPham.Text;
-            chitietsach.ngayXuatBan = dateNgayXuatBan.Value;
-            chitietsach.nhaXuatBan = txtNhaXuatBan.Text;
-            chitietsach.soLuongTon = Convert.ToInt32(txtSoLuong.Text);
-            chitietsach.tacGia = txtTacGia.Text;
-            sanpham.maSP = chitietsach.maSP;
-            sanpham.tenSP = chitietsach.tenSP;
-            sanpham.hangMuc = "Sách";
-            sanpham.donGia = Convert.ToInt32(txtDonGia.Text);
-            sanpham.donVi = txtDonVi.Text;
-            using(var db = new BookstoreEntities1())
+            if (txtMaSP.Text == null || txtTenSanPham.Text == null || txtDonGia.Text == null || txtDonVi.Text == null || txtSoLuong.Text ==null)
+                MessageBox.Show("Vui lòng nhập mã mặt hàng và đầy đủ các thông tin");
+            else
             {
-                db.SanPhams.Add(sanpham);
-                db.DanhMucSaches.Add(chitietsach);
-                db.SaveChanges();
+                var chitietsach = new DanhMucSach();
+                var sanpham = new SanPham();
+                chitietsach.maSP = txtMaSP.Text;
+                chitietsach.tenSP = txtTenSanPham.Text;
+                chitietsach.ngayXuatBan = dateNgayXuatBan.Value;
+                chitietsach.nhaXuatBan = txtNhaXuatBan.Text;
+                chitietsach.tacGia = txtTacGia.Text;
+                chitietsach.soLuongTon = Convert.ToInt32(txtSoLuong.Text);
+                sanpham.maSP = chitietsach.maSP;
+                sanpham.tenSP = chitietsach.tenSP;
+                sanpham.hangMuc = "Sách";
+                sanpham.donGia = Convert.ToInt32(txtDonGia.Text);
+                sanpham.donVi = txtDonVi.Text;
+                using (var db = new BookstoreEntities1())
+                {
+                    db.SanPhams.Add(sanpham);
+                    db.DanhMucSaches.Add(chitietsach);
+                    db.SaveChanges();
+                }
+                MessageBox.Show("Đã thêm thành công sản phẩm" + txtTenSanPham.Text + "");
+                this.Close();
             }
         }
 
@@ -54,6 +61,11 @@ namespace QLHS
             txtSoLuong.Text="";
             txtTenSanPham.Text="";
             txtTacGia.Text = "";
+        }
+
+        private void frmThemSach_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -6,14 +6,14 @@
         <MappingFragment StoreEntitySet="CaLamViec">
           <ScalarProperty Name="maCaTruc" ColumnName="maCaTruc" />
           <ScalarProperty Name="ngayLamViec" ColumnName="ngayLamViec" />
-          <ScalarProperty Name="gioMoCa" ColumnName="gioMoCa" />
-          <ScalarProperty Name="gioDongCa" ColumnName="gioDongCa" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CT_CaLamViec">
       <EntityTypeMapping TypeName="BookstoreModel.CT_CaLamViec">
         <MappingFragment StoreEntitySet="CT_CaLamViec">
+          <ScalarProperty Name="gioMoCa" ColumnName="gioMoCa" />
+          <ScalarProperty Name="gioDongCa" ColumnName="gioDongCa" />
           <ScalarProperty Name="maCaTruc" ColumnName="maCaTruc" />
           <ScalarProperty Name="caSangChieuToi" ColumnName="caSangChieuToi" />
           <ScalarProperty Name="maNV" ColumnName="maNV" />
@@ -34,6 +34,7 @@
     <EntitySetMapping Name="DanhMucSaches">
       <EntityTypeMapping TypeName="BookstoreModel.DanhMucSach">
         <MappingFragment StoreEntitySet="DanhMucSach">
+          <ScalarProperty Name="tacGia" ColumnName="tacGia" />
           <ScalarProperty Name="maSP" ColumnName="maSP" />
           <ScalarProperty Name="tenSP" ColumnName="tenSP" />
           <ScalarProperty Name="nhaXuatBan" ColumnName="nhaXuatBan" />

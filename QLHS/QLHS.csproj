@@ -118,6 +118,36 @@
     <Compile Include="frmChiTietVanPhongPham.Designer.cs">
       <DependentUpon>frmChiTietVanPhongPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemCa.Designer.cs">
+      <DependentUpon>frmThemCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemHoaDon.Designer.cs">
+      <DependentUpon>frmThemHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemKhachHang.Designer.cs">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemNhanVien.Designer.cs">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmThemSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +185,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmChiTietVanPhongPham.resx">
       <DependentUpon>frmChiTietVanPhongPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemCa.resx">
+      <DependentUpon>frmThemCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemHoaDon.resx">
+      <DependentUpon>frmThemHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemKhachHang.resx">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemNhanVien.resx">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmThemSach.resx">
       <DependentUpon>frmThemSach.cs</DependentUpon>
@@ -240,6 +285,11 @@
       <DependentUpon>Entities.edmx</DependentUpon>
       <LastGenOutput>DsClasses.cs</LastGenOutput>
     </Content>
+    <None Include="img\ICON\buttonframe.png" />
+    <None Include="img\ICON\passwordicon.png" />
+    <None Include="img\ICON\Usericon.png" />
+    <None Include="img\ICON\IcoLogin.png" />
+    <None Include="img\ICON\random-icon.png" />
     <None Include="img\ICON\add-icon-png-2471-Windows.ico" />
     <None Include="img\ICON\add-icon-png-2471.png" />
     <None Include="img\ICON\ThongKe60.jpg" />

@@ -273,6 +273,7 @@ namespace QLHS
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmThemSach";
             this.Text = "frmThemSanPham";
+            this.Load += new System.EventHandler(this.frmThemSach_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

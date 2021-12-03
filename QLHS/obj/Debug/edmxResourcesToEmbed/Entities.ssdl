@@ -4,26 +4,27 @@
     <Key>
       <PropertyRef Name="maCaTruc" />
     </Key>
-    <Property Name="maCaTruc" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="maCaTruc" Type="nchar" MaxLength="12" Nullable="false" />
     <Property Name="ngayLamViec" Type="date" />
-    <Property Name="gioMoCa" Type="time" Precision="7" />
-    <Property Name="gioDongCa" Type="time" Precision="7" />
   </EntityType>
   <EntityType Name="CT_CaLamViec">
     <Key>
       <PropertyRef Name="maCaTruc" />
+      <PropertyRef Name="maNV" />
     </Key>
-    <Property Name="maCaTruc" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="maCaTruc" Type="nchar" MaxLength="12" Nullable="false" />
     <Property Name="caSangChieuToi" Type="nchar" MaxLength="10" />
-    <Property Name="maNV" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="maNV" Type="nchar" MaxLength="12" Nullable="false" />
+    <Property Name="gioDongCa" Type="time" Precision="7" />
+    <Property Name="gioMoCa" Type="time" Precision="7" />
   </EntityType>
   <EntityType Name="CT_HD">
     <Key>
       <PropertyRef Name="maHD" />
       <PropertyRef Name="maSP" />
     </Key>
-    <Property Name="maHD" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="maSP" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="maHD" Type="nchar" MaxLength="12" Nullable="false" />
+    <Property Name="maSP" Type="nchar" MaxLength="12" Nullable="false" />
     <Property Name="soLuong" Type="int" />
     <Property Name="donGia" Type="int" />
     <Property Name="thanhTien" Type="int" />
@@ -32,17 +33,18 @@
     <Key>
       <PropertyRef Name="maSP" />
     </Key>
-    <Property Name="maSP" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="maSP" Type="nchar" MaxLength="12" Nullable="false" />
     <Property Name="tenSP" Type="nvarchar" MaxLength="50" />
     <Property Name="nhaXuatBan" Type="nvarchar" MaxLength="50" />
     <Property Name="ngayXuatBan" Type="date" />
     <Property Name="soLuongTon" Type="int" />
+    <Property Name="tacGia" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="DanhMucVanPhongPham">
     <Key>
       <PropertyRef Name="maSP" />
     </Key>
-    <Property Name="maSP" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="maSP" Type="nchar" MaxLength="12" Nullable="false" />
     <Property Name="tenSP" Type="nvarchar" MaxLength="50" />
     <Property Name="nhaCC" Type="nvarchar" MaxLength="50" />
     <Property Name="soLuongTon" Type="int" />
@@ -51,8 +53,8 @@
     <Key>
       <PropertyRef Name="maHD" />
     </Key>
-    <Property Name="maHD" Type="nchar" MaxLength="10" Nullable="false" />
-    <Property Name="maNV" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="maHD" Type="nchar" MaxLength="12" Nullable="false" />
+    <Property Name="maNV" Type="nchar" MaxLength="12" Nullable="false" />
     <Property Name="ngayLapHD" Type="date" />
     <Property Name="tongTien" Type="int" />
     <Property Name="maKH" Type="nchar" MaxLength="15" Nullable="false" />
@@ -72,23 +74,23 @@
     <Key>
       <PropertyRef Name="maNV" />
     </Key>
-    <Property Name="maNV" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="maNV" Type="nchar" MaxLength="12" Nullable="false" />
     <Property Name="tenNV" Type="nvarchar" MaxLength="50" />
-    <Property Name="viTri" Type="nchar" MaxLength="2" />
+    <Property Name="viTri" Type="nchar" MaxLength="10" />
     <Property Name="sdt" Type="nchar" MaxLength="10" />
     <Property Name="gioiTinh" Type="nchar" MaxLength="3" />
     <Property Name="email" Type="nchar" MaxLength="50" />
-    <Property Name="matkhau" Type="nchar" MaxLength="16" />
+    <Property Name="matkhau" Type="nchar" MaxLength="32" />
     <Property Name="ngaysinh" Type="date" />
   </EntityType>
   <EntityType Name="SanPham">
     <Key>
       <PropertyRef Name="maSP" />
     </Key>
-    <Property Name="maSP" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="maSP" Type="nchar" MaxLength="12" Nullable="false" />
     <Property Name="tenSP" Type="nvarchar" MaxLength="50" />
     <Property Name="hangMuc" Type="nchar" MaxLength="20" />
-    <Property Name="donGia" Type="int" Nullable="false" />
+    <Property Name="donGia" Type="int" />
     <Property Name="donVi" Type="nchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="sysdiagrams">
@@ -103,7 +105,7 @@
   </EntityType>
   <Association Name="FK_CT_CaLamViec_CaLamViec">
     <End Role="CaLamViec" Type="Self.CaLamViec" Multiplicity="1" />
-    <End Role="CT_CaLamViec" Type="Self.CT_CaLamViec" Multiplicity="0..1" />
+    <End Role="CT_CaLamViec" Type="Self.CT_CaLamViec" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CaLamViec">
         <PropertyRef Name="maCaTruc" />

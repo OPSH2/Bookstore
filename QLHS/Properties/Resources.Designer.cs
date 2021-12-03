@@ -173,6 +173,16 @@ namespace QLHS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buttonframe {
+            get {
+                object obj = ResourceManager.GetObject("buttonframe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DangXuat60 {
             get {
                 object obj = ResourceManager.GetObject("DangXuat60", resourceCulture);
@@ -303,6 +313,16 @@ namespace QLHS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IcoLogin {
+            get {
+                object obj = ResourceManager.GetObject("IcoLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGIN_FORM {
             get {
                 object obj = ResourceManager.GetObject("LOGIN FORM", resourceCulture);
@@ -326,6 +346,16 @@ namespace QLHS.Properties {
         internal static System.Drawing.Bitmap Nhà_Sách {
             get {
                 object obj = ResourceManager.GetObject("Nhà Sách", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap passwordicon {
+            get {
+                object obj = ResourceManager.GetObject("passwordicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +443,16 @@ namespace QLHS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap random_icon {
+            get {
+                object obj = ResourceManager.GetObject("random-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Thay_the_hinh_dai_dien_tai_khoan_nguoi_dung_mac {
             get {
                 object obj = ResourceManager.GetObject("Thay-the-hinh-dai-dien-tai-khoan-nguoi-dung-mac", resourceCulture);
@@ -426,6 +466,16 @@ namespace QLHS.Properties {
         internal static System.Drawing.Bitmap ThongKe60 {
             get {
                 object obj = ResourceManager.GetObject("ThongKe60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Usericon {
+            get {
+                object obj = ResourceManager.GetObject("Usericon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

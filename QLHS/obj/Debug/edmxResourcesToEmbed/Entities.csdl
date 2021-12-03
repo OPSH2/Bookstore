@@ -4,20 +4,21 @@
     <Key>
       <PropertyRef Name="maCaTruc" />
     </Key>
-    <Property Name="maCaTruc" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maCaTruc" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="ngayLamViec" Type="DateTime" Precision="0" />
-    <Property Name="gioMoCa" Type="Time" Precision="7" />
-    <Property Name="gioDongCa" Type="Time" Precision="7" />
-    <NavigationProperty Name="CT_CaLamViec" Relationship="Self.FK_CT_CaLamViec_CaLamViec" FromRole="CaLamViec" ToRole="CT_CaLamViec" />
+    <NavigationProperty Name="CT_CaLamViec" Relationship="BookstoreModel.FK_CT_CaLamViec_CaLamViec" FromRole="CaLamViec" ToRole="CT_CaLamViec" />
   </EntityType>
   <EntityType Name="CT_CaLamViec">
     <Key>
       <PropertyRef Name="maCaTruc" />
+      <PropertyRef Name="maNV" />
     </Key>
-    <Property Name="maCaTruc" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maCaTruc" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="gioMoCa" Type="Time" Precision="7" />
+    <Property Name="gioDongCa" Type="Time" Precision="7" />
     <Property Name="caSangChieuToi" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-    <Property Name="maNV" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="CaLamViec" Relationship="Self.FK_CT_CaLamViec_CaLamViec" FromRole="CT_CaLamViec" ToRole="CaLamViec" />
+    <Property Name="maNV" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="CaLamViec" Relationship="BookstoreModel.FK_CT_CaLamViec_CaLamViec" FromRole="CT_CaLamViec" ToRole="CaLamViec" />
     <NavigationProperty Name="NhanVien" Relationship="Self.FK_CT_CaLamViec_NhanVien" FromRole="CT_CaLamViec" ToRole="NhanVien" />
   </EntityType>
   <EntityType Name="CT_HD">
@@ -25,30 +26,31 @@
       <PropertyRef Name="maHD" />
       <PropertyRef Name="maSP" />
     </Key>
-    <Property Name="maHD" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="maSP" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maHD" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maSP" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="soLuong" Type="Int32" />
     <Property Name="donGia" Type="Int32" />
     <Property Name="thanhTien" Type="Int32" />
-    <NavigationProperty Name="HoaDon" Relationship="Self.FK_CT_HD_HoaDon" FromRole="CT_HD" ToRole="HoaDon" />
     <NavigationProperty Name="SanPham" Relationship="Self.FK_CT_HD_SanPham" FromRole="CT_HD" ToRole="SanPham" />
+    <NavigationProperty Name="HoaDon" Relationship="BookstoreModel.FK_CT_HD_HoaDon" FromRole="CT_HD" ToRole="HoaDon" />
   </EntityType>
   <EntityType Name="DanhMucSach">
     <Key>
       <PropertyRef Name="maSP" />
     </Key>
-    <Property Name="maSP" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maSP" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="tenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="nhaXuatBan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ngayXuatBan" Type="DateTime" Precision="0" />
     <Property Name="soLuongTon" Type="Int32" />
     <NavigationProperty Name="SanPham" Relationship="Self.FK_DanhMucSach_SanPham" FromRole="DanhMucSach" ToRole="SanPham" />
+    <Property Name="tacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="DanhMucVanPhongPham">
     <Key>
       <PropertyRef Name="maSP" />
     </Key>
-    <Property Name="maSP" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maSP" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="tenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="nhaCC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="soLuongTon" Type="Int32" />
@@ -58,14 +60,14 @@
     <Key>
       <PropertyRef Name="maHD" />
     </Key>
-    <Property Name="maHD" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-    <Property Name="maNV" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maHD" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maNV" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="ngayLapHD" Type="DateTime" Precision="0" />
     <Property Name="tongTien" Type="Int32" />
     <Property Name="maKH" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="CT_HD" Relationship="Self.FK_CT_HD_HoaDon" FromRole="HoaDon" ToRole="CT_HD" />
     <NavigationProperty Name="KhachHang" Relationship="Self.FK_HoaDon_KhachHang" FromRole="HoaDon" ToRole="KhachHang" />
     <NavigationProperty Name="NhanVien" Relationship="Self.FK_HoaDon_NhanVien" FromRole="HoaDon" ToRole="NhanVien" />
+    <NavigationProperty Name="CT_HD" Relationship="BookstoreModel.FK_CT_HD_HoaDon" FromRole="HoaDon" ToRole="CT_HD" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
@@ -83,13 +85,13 @@
     <Key>
       <PropertyRef Name="maNV" />
     </Key>
-    <Property Name="maNV" Type="String" MaxLength="8" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maNV" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="tenNV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="viTri" Type="String" MaxLength="2" FixedLength="true" Unicode="true" />
+    <Property Name="viTri" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="sdt" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <Property Name="gioiTinh" Type="String" MaxLength="3" FixedLength="true" Unicode="true" />
     <Property Name="email" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-    <Property Name="matkhau" Type="String" MaxLength="16" FixedLength="true" Unicode="true" />
+    <Property Name="matkhau" Type="String" MaxLength="32" FixedLength="true" Unicode="true" />
     <Property Name="ngaysinh" Type="DateTime" Precision="0" />
     <NavigationProperty Name="CT_CaLamViec" Relationship="Self.FK_CT_CaLamViec_NhanVien" FromRole="NhanVien" ToRole="CT_CaLamViec" />
     <NavigationProperty Name="HoaDons" Relationship="Self.FK_HoaDon_NhanVien" FromRole="NhanVien" ToRole="HoaDon" />
@@ -98,10 +100,10 @@
     <Key>
       <PropertyRef Name="maSP" />
     </Key>
-    <Property Name="maSP" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="maSP" Type="String" MaxLength="12" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="tenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="hangMuc" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-    <Property Name="donGia" Type="Int32" Nullable="false" />
+    <Property Name="donGia" Type="Int32" />
     <Property Name="donVi" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
     <NavigationProperty Name="CT_HD" Relationship="Self.FK_CT_HD_SanPham" FromRole="SanPham" ToRole="CT_HD" />
     <NavigationProperty Name="DanhMucSach" Relationship="Self.FK_DanhMucSach_SanPham" FromRole="SanPham" ToRole="DanhMucSach" />
@@ -119,7 +121,7 @@
   </EntityType>
   <Association Name="FK_CT_CaLamViec_CaLamViec">
     <End Role="CaLamViec" Type="Self.CaLamViec" Multiplicity="1" />
-    <End Role="CT_CaLamViec" Type="Self.CT_CaLamViec" Multiplicity="0..1" />
+    <End Role="CT_CaLamViec" Type="Self.CT_CaLamViec" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CaLamViec">
         <PropertyRef Name="maCaTruc" />
@@ -138,18 +140,6 @@
       </Principal>
       <Dependent Role="CT_CaLamViec">
         <PropertyRef Name="maNV" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_CT_HD_HoaDon">
-    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="1" />
-    <End Role="CT_HD" Type="Self.CT_HD" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="HoaDon">
-        <PropertyRef Name="maHD" />
-      </Principal>
-      <Dependent Role="CT_HD">
-        <PropertyRef Name="maHD" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -232,10 +222,6 @@
       <End Role="NhanVien" EntitySet="NhanViens" />
       <End Role="CT_CaLamViec" EntitySet="CT_CaLamViec" />
     </AssociationSet>
-    <AssociationSet Name="FK_CT_HD_HoaDon" Association="Self.FK_CT_HD_HoaDon">
-      <End Role="HoaDon" EntitySet="HoaDons" />
-      <End Role="CT_HD" EntitySet="CT_HD" />
-    </AssociationSet>
     <AssociationSet Name="FK_CT_HD_SanPham" Association="Self.FK_CT_HD_SanPham">
       <End Role="SanPham" EntitySet="SanPhams" />
       <End Role="CT_HD" EntitySet="CT_HD" />
@@ -256,5 +242,21 @@
       <End Role="NhanVien" EntitySet="NhanViens" />
       <End Role="HoaDon" EntitySet="HoaDons" />
     </AssociationSet>
+    <AssociationSet Name="FK_CT_HD_HoaDon" Association="BookstoreModel.FK_CT_HD_HoaDon">
+      <End Role="HoaDon" EntitySet="HoaDons" />
+      <End Role="CT_HD" EntitySet="CT_HD" />
+    </AssociationSet>
   </EntityContainer>
+  <Association Name="FK_CT_HD_HoaDon">
+    <End Type="BookstoreModel.HoaDon" Role="HoaDon" Multiplicity="1" />
+    <End Type="BookstoreModel.CT_HD" Role="CT_HD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDon">
+        <PropertyRef Name="maHD" />
+      </Principal>
+      <Dependent Role="CT_HD">
+        <PropertyRef Name="maHD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

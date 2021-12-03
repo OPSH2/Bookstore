@@ -16,8 +16,7 @@ namespace QLHS
     {
         public string maCaTruc { get; set; }
         public Nullable<System.DateTime> ngayLamViec { get; set; }
-        public Nullable<System.TimeSpan> gioMoCa { get; set; }
-        public Nullable<System.TimeSpan> gioDongCa { get; set; }
+        
     
         public virtual CT_CaLamViec CT_CaLamViec { get; set; }
     }

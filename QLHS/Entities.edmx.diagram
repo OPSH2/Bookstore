@@ -17,12 +17,13 @@
         <EntityTypeShape EntityType="BookstoreModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="BookstoreModel.FK_CT_CaLamViec_CaLamViec" ManuallyRouted="false" />
         <AssociationConnector Association="BookstoreModel.FK_CT_CaLamViec_NhanVien" ManuallyRouted="false" />
-        <AssociationConnector Association="BookstoreModel.FK_CT_HD_HoaDon" ManuallyRouted="false" />
         <AssociationConnector Association="BookstoreModel.FK_CT_HD_SanPham" ManuallyRouted="false" />
         <AssociationConnector Association="BookstoreModel.FK_DanhMucSach_SanPham" ManuallyRouted="false" />
         <AssociationConnector Association="BookstoreModel.FK_DanhMucVanPhongPham_SanPham" ManuallyRouted="false" />
         <AssociationConnector Association="BookstoreModel.FK_HoaDon_KhachHang" ManuallyRouted="false" />
         <AssociationConnector Association="BookstoreModel.FK_HoaDon_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="BookstoreModel.CT_HDHoaDon" />
+        <AssociationConnector Association="BookstoreModel.FK_CT_HD_HoaDon" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

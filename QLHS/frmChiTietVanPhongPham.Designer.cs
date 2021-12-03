@@ -29,54 +29,36 @@ namespace QLHS
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelSoLuong = new System.Windows.Forms.Label();
-            this.labelnhacungcap = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
-            this.labelDonViBan = new System.Windows.Forms.Label();
-            this.labelDonGia = new System.Windows.Forms.Label();
-            this.labelHangMuc = new System.Windows.Forms.Label();
-            this.labelTenSP = new System.Windows.Forms.Label();
-            this.labelMaSP = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtMaSP = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtTenSP = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txtHangMuc = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.txtDonViBan = new System.Windows.Forms.TextBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtNhaCungCap = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.txtDonGia = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.txtSoLuongTon = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // labelSoLuong
-            // 
-            this.labelSoLuong.AutoSize = true;
-            this.labelSoLuong.BackColor = System.Drawing.Color.Transparent;
-            this.labelSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSoLuong.Location = new System.Drawing.Point(770, 183);
-            this.labelSoLuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelSoLuong.Name = "labelSoLuong";
-            this.labelSoLuong.Size = new System.Drawing.Size(58, 22);
-            this.labelSoLuong.TabIndex = 32;
-            this.labelSoLuong.Text = "label8";
-            // 
-            // labelnhacungcap
-            // 
-            this.labelnhacungcap.AutoSize = true;
-            this.labelnhacungcap.BackColor = System.Drawing.Color.Transparent;
-            this.labelnhacungcap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelnhacungcap.Location = new System.Drawing.Point(770, 129);
-            this.labelnhacungcap.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelnhacungcap.Name = "labelnhacungcap";
-            this.labelnhacungcap.Size = new System.Drawing.Size(58, 22);
-            this.labelnhacungcap.TabIndex = 31;
-            this.labelnhacungcap.Text = "label7";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(532, 183);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -88,7 +70,6 @@ namespace QLHS
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(532, 129);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -106,6 +87,7 @@ namespace QLHS
             this.btnXoa.TabIndex = 26;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnCapNhat
             // 
@@ -116,71 +98,11 @@ namespace QLHS
             this.btnCapNhat.TabIndex = 25;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
-            // 
-            // labelDonViBan
-            // 
-            this.labelDonViBan.AutoSize = true;
-            this.labelDonViBan.BackColor = System.Drawing.Color.Transparent;
-            this.labelDonViBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDonViBan.Location = new System.Drawing.Point(295, 238);
-            this.labelDonViBan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelDonViBan.Name = "labelDonViBan";
-            this.labelDonViBan.Size = new System.Drawing.Size(68, 22);
-            this.labelDonViBan.TabIndex = 24;
-            this.labelDonViBan.Text = "label10";
-            // 
-            // labelDonGia
-            // 
-            this.labelDonGia.AutoSize = true;
-            this.labelDonGia.BackColor = System.Drawing.Color.Transparent;
-            this.labelDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDonGia.Location = new System.Drawing.Point(770, 72);
-            this.labelDonGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelDonGia.Name = "labelDonGia";
-            this.labelDonGia.Size = new System.Drawing.Size(58, 22);
-            this.labelDonGia.TabIndex = 23;
-            this.labelDonGia.Text = "label9";
-            // 
-            // labelHangMuc
-            // 
-            this.labelHangMuc.AutoSize = true;
-            this.labelHangMuc.BackColor = System.Drawing.Color.Transparent;
-            this.labelHangMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHangMuc.Location = new System.Drawing.Point(300, 183);
-            this.labelHangMuc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelHangMuc.Name = "labelHangMuc";
-            this.labelHangMuc.Size = new System.Drawing.Size(58, 22);
-            this.labelHangMuc.TabIndex = 22;
-            this.labelHangMuc.Text = "label8";
-            // 
-            // labelTenSP
-            // 
-            this.labelTenSP.AutoSize = true;
-            this.labelTenSP.BackColor = System.Drawing.Color.Transparent;
-            this.labelTenSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTenSP.Location = new System.Drawing.Point(300, 129);
-            this.labelTenSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelTenSP.Name = "labelTenSP";
-            this.labelTenSP.Size = new System.Drawing.Size(58, 22);
-            this.labelTenSP.TabIndex = 21;
-            this.labelTenSP.Text = "label7";
-            // 
-            // labelMaSP
-            // 
-            this.labelMaSP.AutoSize = true;
-            this.labelMaSP.BackColor = System.Drawing.Color.Transparent;
-            this.labelMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMaSP.Location = new System.Drawing.Point(300, 72);
-            this.labelMaSP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelMaSP.Name = "labelMaSP";
-            this.labelMaSP.Size = new System.Drawing.Size(58, 22);
-            this.labelMaSP.TabIndex = 20;
-            this.labelMaSP.Text = "label6";
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(57, 238);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -192,7 +114,6 @@ namespace QLHS
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(532, 72);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -204,7 +125,6 @@ namespace QLHS
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(62, 183);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -216,7 +136,6 @@ namespace QLHS
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(62, 129);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -228,7 +147,6 @@ namespace QLHS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(62, 72);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -239,18 +157,25 @@ namespace QLHS
             // 
             // groupBox3
             // 
-            this.groupBox3.BackgroundImage = global::QLHS.Properties.Resources.hinh_nen_powerpoint_de_thuong_theo_chu_de_hoc_tap;
-            this.groupBox3.Controls.Add(this.labelSoLuong);
-            this.groupBox3.Controls.Add(this.labelnhacungcap);
+            this.groupBox3.BackColor = System.Drawing.Color.PowderBlue;
+            this.groupBox3.Controls.Add(this.panel7);
+            this.groupBox3.Controls.Add(this.txtSoLuongTon);
+            this.groupBox3.Controls.Add(this.panel6);
+            this.groupBox3.Controls.Add(this.txtDonGia);
+            this.groupBox3.Controls.Add(this.panel5);
+            this.groupBox3.Controls.Add(this.txtNhaCungCap);
+            this.groupBox3.Controls.Add(this.panel4);
+            this.groupBox3.Controls.Add(this.txtDonViBan);
+            this.groupBox3.Controls.Add(this.panel3);
+            this.groupBox3.Controls.Add(this.txtHangMuc);
+            this.groupBox3.Controls.Add(this.panel2);
+            this.groupBox3.Controls.Add(this.txtTenSP);
+            this.groupBox3.Controls.Add(this.panel1);
+            this.groupBox3.Controls.Add(this.txtMaSP);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.btnXoa);
             this.groupBox3.Controls.Add(this.btnCapNhat);
-            this.groupBox3.Controls.Add(this.labelDonViBan);
-            this.groupBox3.Controls.Add(this.labelDonGia);
-            this.groupBox3.Controls.Add(this.labelHangMuc);
-            this.groupBox3.Controls.Add(this.labelTenSP);
-            this.groupBox3.Controls.Add(this.labelMaSP);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label3);
@@ -265,14 +190,134 @@ namespace QLHS
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chi tiết";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Location = new System.Drawing.Point(191, 98);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 1);
+            this.panel1.TabIndex = 37;
+            // 
+            // txtMaSP
+            // 
+            this.txtMaSP.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtMaSP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMaSP.Location = new System.Drawing.Point(191, 75);
+            this.txtMaSP.Name = "txtMaSP";
+            this.txtMaSP.Size = new System.Drawing.Size(200, 16);
+            this.txtMaSP.TabIndex = 36;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel2.Location = new System.Drawing.Point(191, 155);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 1);
+            this.panel2.TabIndex = 39;
+            // 
+            // txtTenSP
+            // 
+            this.txtTenSP.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtTenSP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenSP.Location = new System.Drawing.Point(191, 132);
+            this.txtTenSP.Name = "txtTenSP";
+            this.txtTenSP.Size = new System.Drawing.Size(200, 16);
+            this.txtTenSP.TabIndex = 38;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel3.Location = new System.Drawing.Point(191, 209);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 1);
+            this.panel3.TabIndex = 41;
+            // 
+            // txtHangMuc
+            // 
+            this.txtHangMuc.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtHangMuc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHangMuc.Location = new System.Drawing.Point(191, 186);
+            this.txtHangMuc.Name = "txtHangMuc";
+            this.txtHangMuc.Size = new System.Drawing.Size(200, 16);
+            this.txtHangMuc.TabIndex = 40;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel4.Location = new System.Drawing.Point(191, 264);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 1);
+            this.panel4.TabIndex = 43;
+            // 
+            // txtDonViBan
+            // 
+            this.txtDonViBan.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtDonViBan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDonViBan.Location = new System.Drawing.Point(191, 241);
+            this.txtDonViBan.Name = "txtDonViBan";
+            this.txtDonViBan.Size = new System.Drawing.Size(200, 16);
+            this.txtDonViBan.TabIndex = 42;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel5.Location = new System.Drawing.Point(665, 155);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 1);
+            this.panel5.TabIndex = 45;
+            // 
+            // txtNhaCungCap
+            // 
+            this.txtNhaCungCap.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtNhaCungCap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNhaCungCap.Location = new System.Drawing.Point(665, 132);
+            this.txtNhaCungCap.Name = "txtNhaCungCap";
+            this.txtNhaCungCap.Size = new System.Drawing.Size(200, 16);
+            this.txtNhaCungCap.TabIndex = 44;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel6.Location = new System.Drawing.Point(665, 98);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 1);
+            this.panel6.TabIndex = 47;
+            // 
+            // txtDonGia
+            // 
+            this.txtDonGia.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtDonGia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDonGia.Location = new System.Drawing.Point(665, 75);
+            this.txtDonGia.Name = "txtDonGia";
+            this.txtDonGia.Size = new System.Drawing.Size(200, 16);
+            this.txtDonGia.TabIndex = 46;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel7.Location = new System.Drawing.Point(665, 209);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(200, 1);
+            this.panel7.TabIndex = 49;
+            // 
+            // txtSoLuongTon
+            // 
+            this.txtSoLuongTon.BackColor = System.Drawing.Color.PowderBlue;
+            this.txtSoLuongTon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSoLuongTon.Location = new System.Drawing.Point(665, 186);
+            this.txtSoLuongTon.Name = "txtSoLuongTon";
+            this.txtSoLuongTon.Size = new System.Drawing.Size(200, 16);
+            this.txtSoLuongTon.TabIndex = 48;
+            // 
             // frmChiTietVanPhongPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(939, 450);
             this.Controls.Add(this.groupBox3);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmChiTietVanPhongPham";
             this.Text = "frmChiTietVanPhongPham";
             this.Load += new System.EventHandler(this.frmChiTietVanPhongPham_Load);
@@ -283,22 +328,29 @@ namespace QLHS
         }
 
         #endregion
-        private System.Windows.Forms.Label labelSoLuong;
-        private System.Windows.Forms.Label labelnhacungcap;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnCapNhat;
-        private System.Windows.Forms.Label labelDonViBan;
-        private System.Windows.Forms.Label labelDonGia;
-        private System.Windows.Forms.Label labelHangMuc;
-        private System.Windows.Forms.Label labelTenSP;
-        private System.Windows.Forms.Label labelMaSP;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox txtSoLuongTon;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox txtDonGia;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txtNhaCungCap;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox txtDonViBan;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox txtHangMuc;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtTenSP;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtMaSP;
     }
 }

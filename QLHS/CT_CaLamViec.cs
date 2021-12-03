@@ -17,7 +17,9 @@ namespace QLHS
         public string maCaTruc { get; set; }
         public string caSangChieuToi { get; set; }
         public string maNV { get; set; }
-    
+        public Nullable<System.TimeSpan> gioMoCa { get; set; }
+        public Nullable<System.TimeSpan> gioDongCa { get; set; }
+
         public virtual CaLamViec CaLamViec { get; set; }
         public virtual NhanVien NhanVien { get; set; }
     }

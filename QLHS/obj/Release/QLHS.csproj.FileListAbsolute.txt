@@ -6,7 +6,6 @@ D:\Work\AppDev\Bookstore\QLHS\bin\Release\EntityFramework.SqlServer.dll
 D:\Work\AppDev\Bookstore\QLHS\bin\Release\EntityFramework.xml
 D:\Work\AppDev\Bookstore\QLHS\bin\Release\EntityFramework.SqlServer.xml
 D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.csprojAssemblyReference.cache
-D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.ChiTietSach.resources
 D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.Form1.resources
 D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.frmThemSach.resources
 D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.Properties.Resources.resources
@@ -15,3 +14,10 @@ D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.csproj.CoreCompileInputs.cache
 D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.csproj.CopyComplete
 D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.exe
 D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.pdb
+D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.frmChiTietSach.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.frmChiTietVanPhongPham.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.frmLogin.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.frmThemHoaDon.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.frmThemKhachHang.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.frmThemNhanVien.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Release\QLHS.frmThemSanPham.resources

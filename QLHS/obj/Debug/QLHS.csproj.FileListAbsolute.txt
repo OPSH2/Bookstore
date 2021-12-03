@@ -14,4 +14,11 @@ D:\Work\AppDev\Bookstore\QLHS\bin\Debug\EntityFramework.xml
 D:\Work\AppDev\Bookstore\QLHS\bin\Debug\EntityFramework.SqlServer.xml
 D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.csproj.CopyComplete
 D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmThemSach.resources
-D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.ChiTietSach.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmChiTietSach.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmChiTietVanPhongPham.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmThemHoaDon.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmThemSanPham.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmLogin.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmThemKhachHang.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmThemNhanVien.resources
+D:\Work\AppDev\Bookstore\QLHS\obj\Debug\QLHS.frmThemCa.resources
