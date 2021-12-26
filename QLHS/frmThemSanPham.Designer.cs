@@ -47,13 +47,15 @@ namespace QLHS
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtHangMuc
             // 
             this.txtHangMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHangMuc.Location = new System.Drawing.Point(299, 494);
-            this.txtHangMuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHangMuc.Margin = new System.Windows.Forms.Padding(4);
             this.txtHangMuc.Name = "txtHangMuc";
             this.txtHangMuc.Size = new System.Drawing.Size(306, 27);
             this.txtHangMuc.TabIndex = 39;
@@ -78,7 +80,7 @@ namespace QLHS
             this.btnThoat.Image = global::QLHS.Properties.Resources.DangXuat60;
             this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThoat.Location = new System.Drawing.Point(802, 595);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(140, 52);
             this.btnThoat.TabIndex = 37;
@@ -91,7 +93,7 @@ namespace QLHS
             this.btnNhapLai.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnNhapLai.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnNhapLai.Location = new System.Drawing.Point(618, 595);
-            this.btnNhapLai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhapLai.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhapLai.Name = "btnNhapLai";
             this.btnNhapLai.Size = new System.Drawing.Size(148, 52);
             this.btnNhapLai.TabIndex = 36;
@@ -107,7 +109,7 @@ namespace QLHS
             this.btnThem.Image = global::QLHS.Properties.Resources.add_icon_png_2471_Windows;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThem.Location = new System.Drawing.Point(434, 595);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(155, 52);
             this.btnThem.TabIndex = 35;
@@ -119,7 +121,7 @@ namespace QLHS
             // 
             this.txtDonVi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDonVi.Location = new System.Drawing.Point(900, 401);
-            this.txtDonVi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDonVi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDonVi.Name = "txtDonVi";
             this.txtDonVi.Size = new System.Drawing.Size(306, 27);
             this.txtDonVi.TabIndex = 34;
@@ -129,7 +131,7 @@ namespace QLHS
             // 
             this.txtDonGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDonGia.Location = new System.Drawing.Point(900, 295);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDonGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtDonGia.Name = "txtDonGia";
             this.txtDonGia.Size = new System.Drawing.Size(306, 27);
             this.txtDonGia.TabIndex = 33;
@@ -139,7 +141,7 @@ namespace QLHS
             // 
             this.txtSoLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoLuong.Location = new System.Drawing.Point(900, 180);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(306, 27);
             this.txtSoLuong.TabIndex = 32;
@@ -149,7 +151,7 @@ namespace QLHS
             // 
             this.txtNhaCungCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNhaCungCap.Location = new System.Drawing.Point(299, 398);
-            this.txtNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNhaCungCap.Margin = new System.Windows.Forms.Padding(4);
             this.txtNhaCungCap.Name = "txtNhaCungCap";
             this.txtNhaCungCap.Size = new System.Drawing.Size(306, 27);
             this.txtNhaCungCap.TabIndex = 31;
@@ -159,7 +161,7 @@ namespace QLHS
             // 
             this.txtTenSanPham.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenSanPham.Location = new System.Drawing.Point(299, 295);
-            this.txtTenSanPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenSanPham.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenSanPham.Name = "txtTenSanPham";
             this.txtTenSanPham.Size = new System.Drawing.Size(306, 27);
             this.txtTenSanPham.TabIndex = 30;
@@ -169,7 +171,7 @@ namespace QLHS
             // 
             this.txtMaSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSP.Location = new System.Drawing.Point(299, 180);
-            this.txtMaSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaSP.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaSP.Name = "txtMaSP";
             this.txtMaSP.Size = new System.Drawing.Size(306, 27);
             this.txtMaSP.TabIndex = 29;
@@ -260,6 +262,18 @@ namespace QLHS
             this.label1.TabIndex = 20;
             this.label1.Text = "THÊM VĂN PHÒNG PHẨM";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::QLHS.Properties.Resources.random_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(618, 180);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmThemSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -267,6 +281,7 @@ namespace QLHS
             this.BackgroundImage = global::QLHS.Properties.Resources._1633280963_920_Hinh_anh_PowerPoint_dep;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1334, 692);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtHangMuc);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnThoat);
@@ -286,10 +301,11 @@ namespace QLHS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmThemSanPham";
             this.Text = "frmThemSanPham";
             this.Load += new System.EventHandler(this.frmThemSanPham_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,5 +331,6 @@ namespace QLHS
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

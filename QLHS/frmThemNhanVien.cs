@@ -20,7 +20,7 @@ namespace QLHS
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             txtMaNV.Text = "";
-            txtMaNV.Text = "NV"+ DateTime.Today.Year.ToString() + DateTime.Today.Month.ToString() + DateTime.Today.Day.ToString() + DateTime.Now.Hour.ToString();
+            txtMaNV.Text = "NV"+ DateTime.Today.Year.ToString() + DateTime.Today.Day.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
         }
 
         private void btnThem_Click(object sender, EventArgs e)

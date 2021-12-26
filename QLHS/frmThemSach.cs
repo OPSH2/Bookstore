@@ -67,5 +67,10 @@ namespace QLHS
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            txtMaSP.Text = "SC" + DateTime.Now.Year.ToString() + DateTime.Now.Day.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString();
+        }
     }
 }

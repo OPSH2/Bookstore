@@ -25,12 +25,11 @@ namespace QLHS
 
         string globmacatruc = "CA" + Form1.shiftdate.Year.ToString() + Form1.shiftdate.Month.ToString() + Form1.shiftdate.Day.ToString();
 
-        private void frmThemCa_Load(object sender, EventArgs e)
+        private void loadCaSang()
         {
-            // TODO: This line of code loads data into the 'bookstoreDataSet2.NhanVien' table. You can move, or remove it, as needed.
             con = new SqlConnection(cs);
             con.Open();
-            adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where caSangChieuToi like '%Sáng%' and ngayLamViec ='" + Form1.shiftdate + "' ", con);
+            adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where ct.maCaTruc like '%CAS"+ Form1.shiftdate.Year.ToString() + Form1.shiftdate.Month.ToString() + Form1.shiftdate.Day.ToString() + "%' ", con);
             dt = new DataTable();
             adapt.Fill(dt);
             for (int i = 0; i < dt.Rows.Count; i++)
@@ -41,19 +40,15 @@ namespace QLHS
                 listitem.SubItems.Add(dr["gioMoCa"].ToString());
                 lvwMorningShift.Items.Add(listitem);
             }
-            adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where caSangChieuToi like '%Chiều%' and ngayLamViec ='" + Form1.shiftdate + "' ", con);
-            dt.Clear();
-            adapt.Fill(dt);
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                DataRow dr = dt.Rows[i];
-                ListViewItem listitem = new ListViewItem();
-                listitem.SubItems.Add(dr["tenNV"].ToString());
-                listitem.SubItems.Add(dr["gioMoCa"].ToString());
-                lvwAfternoonShift.Items.Add(listitem);
-            }
-            adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where caSangChieuToi like '%Tối%' and ngayLamViec ='" + Form1.shiftdate + "' ", con);
-            dt.Clear();
+            con.Close();
+        }
+
+        private void loadCaToi()
+        {
+            con = new SqlConnection(cs);
+            con.Open();
+            adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where ct.maCaTruc like '%CAT" + Form1.shiftdate.Year.ToString() + Form1.shiftdate.Month.ToString() + Form1.shiftdate.Day.ToString() + "%' ", con);
+            dt = new DataTable();
             adapt.Fill(dt);
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -64,6 +59,32 @@ namespace QLHS
                 lvwEveningShift.Items.Add(listitem);
             }
             con.Close();
+        }
+
+        private void loadCaChieu()
+        {
+            con = new SqlConnection(cs);
+            con.Open();
+            adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where ct.maCaTruc like '%CAC" + Form1.shiftdate.Year.ToString() + Form1.shiftdate.Month.ToString() + Form1.shiftdate.Day.ToString() + "%' ", con);
+            dt = new DataTable();
+            adapt.Fill(dt);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DataRow dr = dt.Rows[i];
+                ListViewItem listitem = new ListViewItem();
+                listitem.SubItems.Add(dr["tenNV"].ToString());
+                listitem.SubItems.Add(dr["gioMoCa"].ToString());
+                lvwAfternoonShift.Items.Add(listitem);
+            }
+            con.Close();
+        }
+
+        private void frmThemCa_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'bookstoreDataSet2.NhanVien' table. You can move, or remove it, as needed.
+            loadCaSang();
+            loadCaChieu();
+            loadCaToi();
             dateLamViecNV.Value = Form1.shiftdate;
         }
 

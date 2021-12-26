@@ -93,6 +93,16 @@ namespace QLHS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _267568524_500243931306014_6520611133115804309_n {
+            get {
+                object obj = ResourceManager.GetObject("267568524_500243931306014_6520611133115804309_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2a359a959e5c57020e4d {
             get {
                 object obj = ResourceManager.GetObject("2a359a959e5c57020e4d", resourceCulture);
@@ -343,6 +353,16 @@ namespace QLHS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap mobile_menu_icon {
+            get {
+                object obj = ResourceManager.GetObject("mobile-menu-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Nhà_Sách {
             get {
                 object obj = ResourceManager.GetObject("Nhà Sách", resourceCulture);
@@ -366,6 +386,16 @@ namespace QLHS.Properties {
         internal static System.Drawing.Bitmap Phong60 {
             get {
                 object obj = ResourceManager.GetObject("Phong60", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus {
+            get {
+                object obj = ResourceManager.GetObject("plus", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

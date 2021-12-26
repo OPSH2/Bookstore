@@ -64,22 +64,29 @@ namespace QLHS
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            var chitietsanpham = new DanhMucVanPhongPham();
-            var sanpham = new SanPham();
-            chitietsanpham.maSP = txtMaSP.Text;
-            chitietsanpham.tenSP = txtTenSanPham.Text;
-            chitietsanpham.nhaCC = txtNhaCungCap.Text;
-            chitietsanpham.soLuongTon = Convert.ToInt32(txtSoLuong.Text);
-            sanpham.donGia = Convert.ToInt32(txtDonGia.Text);
-            sanpham.donVi = txtDonVi.Text;
-            sanpham.maSP = chitietsanpham.maSP;
-            sanpham.tenSP = chitietsanpham.tenSP;
-            sanpham.hangMuc = txtHangMuc.Text;
-            using (var db = new BookstoreEntities1())
+            if (txtMaSP.Text == null || txtTenSanPham.Text == null || txtDonGia.Text == null || txtDonVi.Text == null || txtSoLuong.Text == null)
+                MessageBox.Show("Vui lòng nhập mã mặt hàng và đầy đủ các thông tin");
+            else
             {
-                db.SanPhams.Add(sanpham);
-                db.DanhMucVanPhongPhams.Add(chitietsanpham);
-                db.SaveChanges();
+                var chitietsanpham = new DanhMucVanPhongPham();
+                var sanpham = new SanPham();
+                chitietsanpham.maSP = txtMaSP.Text;
+                chitietsanpham.tenSP = txtTenSanPham.Text;
+                chitietsanpham.nhaCC = txtNhaCungCap.Text;
+                chitietsanpham.soLuongTon = Convert.ToInt32(txtSoLuong.Text);
+                sanpham.donGia = Convert.ToInt32(txtDonGia.Text);
+                sanpham.donVi = txtDonVi.Text;
+                sanpham.maSP = chitietsanpham.maSP;
+                sanpham.tenSP = chitietsanpham.tenSP;
+                sanpham.hangMuc = txtHangMuc.Text;
+                using (var db = new BookstoreEntities1())
+                {
+                    db.SanPhams.Add(sanpham);
+                    db.DanhMucVanPhongPhams.Add(chitietsanpham);
+                    db.SaveChanges();
+                }
+                MessageBox.Show("Đã thêm thành công văn phòng phẩm mới.", "Thông báo", MessageBoxButtons.OK);
+                this.Close();
             }
         }
 
@@ -92,6 +99,11 @@ namespace QLHS
             txtTenSanPham.Text = "";
             txtNhaCungCap.Text = "";
             txtSoLuong.Text = "";
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            txtMaSP.Text = "VPP"+DateTime.Now.Year.ToString()+DateTime.Now.Day.ToString()+DateTime.Now.Minute.ToString()+DateTime.Now.Second.ToString();
         }
     }
 }

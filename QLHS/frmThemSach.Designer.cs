@@ -49,6 +49,8 @@ namespace QLHS
             this.btnThoat = new System.Windows.Forms.Button();
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -242,6 +244,18 @@ namespace QLHS
             this.label9.TabIndex = 18;
             this.label9.Text = "Tác giả:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::QLHS.Properties.Resources.random_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(472, 121);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // frmThemSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -249,6 +263,7 @@ namespace QLHS
             this.BackgroundImage = global::QLHS.Properties.Resources.hinh_nen_powerpoint_de_thuong_theo_chu_de_hoc_tap;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1043, 563);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtTacGia);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnThoat);
@@ -274,6 +289,7 @@ namespace QLHS
             this.Name = "frmThemSach";
             this.Text = "frmThemSanPham";
             this.Load += new System.EventHandler(this.frmThemSach_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,5 +317,6 @@ namespace QLHS
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.TextBox txtTacGia;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

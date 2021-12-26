@@ -124,6 +124,12 @@
   <data name="1b04dd1c1ad2d38c8ac3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\1b04dd1c1ad2d38c8ac3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="door (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ICON\door (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ICON\folder_home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DMK60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\DMK60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,17 +139,20 @@
   <data name="IcoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\IcoLogin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hinh-nen-powerpoint-de-thuong-theo-chu-de-hoc-tap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\hinh-nen-powerpoint-de-thuong-theo-chu-de-hoc-tap.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="QLMH60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\QLMH60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="add-icon-png-2471-Windows" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\add-icon-png-2471-Windows.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1633280963_920_Hinh-anh-PowerPoint-dep" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\1633280963_920_Hinh-anh-PowerPoint-dep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="add-icon-png-2471" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\add-icon-png-2471.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mobile-menu-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ICON\mobile-menu-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QLP60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\QLP60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +166,8 @@
   <data name="mic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\mic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Nhà Sách" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\Nhà Sách.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thay-the-hinh-dai-dien-tai-khoan-nguoi-dung-mac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\ICON\Thay-the-hinh-dai-dien-tai-khoan-nguoi-dung-mac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ICON\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gear (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\gear (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,14 +199,11 @@
   <data name="gear (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\gear (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="door (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\ICON\door (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nhà Sách" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\Nhà Sách.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Phong60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\Phong60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QLNV60" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\ICON\QLNV60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GioiThieu60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\GioiThieu60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,6 +223,9 @@
   <data name="profle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\profle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GDTN60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ICON\GDTN60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Usericon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\Usericon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -229,19 +235,22 @@
   <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GDTN60" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\ICON\GDTN60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="QLNV60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ICON\QLNV60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hinh-nen-powerpoint-de-thuong-theo-chu-de-hoc-tap" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\hinh-nen-powerpoint-de-thuong-theo-chu-de-hoc-tap.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1633280963_920_Hinh-anh-PowerPoint-dep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\1633280963_920_Hinh-anh-PowerPoint-dep.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QLKH60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\QLKH60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="folder_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\ICON\folder_home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="buttonframe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\ICON\buttonframe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thay-the-hinh-dai-dien-tai-khoan-nguoi-dung-mac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\ICON\Thay-the-hinh-dai-dien-tai-khoan-nguoi-dung-mac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="267568524_500243931306014_6520611133115804309_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\267568524_500243931306014_6520611133115804309_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

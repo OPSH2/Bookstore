@@ -43,6 +43,7 @@ namespace QLHS
 
         private void labelGuestLogin_Click(object sender, EventArgs e)
         {
+            interMaNV = "";
             Form1 temp = new Form1();
             temp.Show();
         }

@@ -60,21 +60,51 @@ namespace QLHS
 
         private void btnThemCTHD_Click(object sender, EventArgs e)
         {
-            if(dtgrdvwSP_HD.SelectedRows.Count != 0)
+            using(var db = new BookstoreEntities1())
             {
-                CT_HD temp = new CT_HD();
-                temp.maHD = txtmaHD.Text;
-                temp.maSP = dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString();
-                temp.soLuong = Convert.ToInt32(numericSoLuong.Value);
-                temp.donGia = Convert.ToInt32(dtgrdvwSP_HD.SelectedRows[0].Cells[3].Value);
-                temp.thanhTien = temp.soLuong * temp.donGia;
+                if (dtgrdvwSP_HD.SelectedRows.Count != 0)
+                {
+                    if ((db.DanhMucSaches.Find(dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString())!= null))
+                    {
+                        if (db.DanhMucSaches.Find(dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString()).soLuongTon > numericSoLuong.Value)
+                        {
+                            CT_HD temp = new CT_HD();
+                            temp.maHD = txtmaHD.Text;
+                            temp.maSP = dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString();
+                            temp.soLuong = Convert.ToInt32(numericSoLuong.Value);
+                            temp.donGia = Convert.ToInt32(dtgrdvwSP_HD.SelectedRows[0].Cells[3].Value);
+                            temp.thanhTien = temp.soLuong * temp.donGia;
 
-                dtgridvwCTHD.Rows.Add(temp.maSP, temp.soLuong, temp.donGia, temp.thanhTien);
+                            dtgridvwCTHD.Rows.Add(temp.maSP, temp.soLuong, temp.donGia, temp.thanhTien);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Số lượng tồn kho không đủ " + numericSoLuong.Value.ToString() + " sản phẩm để mua. Hiện tại, nhà kho còn" + db.DanhMucSaches.Find(dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString()).soLuongTon.Value.ToString()+" sản phẩm");
+                        }
+                    }
+                    if ((db.DanhMucVanPhongPhams.Find(dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString()) != null))
+                    {
+                        if (db.DanhMucVanPhongPhams.Find(dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString()).soLuongTon > numericSoLuong.Value)
+                        {
+                            CT_HD temp = new CT_HD();
+                            temp.maHD = txtmaHD.Text;
+                            temp.maSP = dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString();
+                            temp.soLuong = Convert.ToInt32(numericSoLuong.Value);
+                            temp.donGia = Convert.ToInt32(dtgrdvwSP_HD.SelectedRows[0].Cells[3].Value);
+                            temp.thanhTien = temp.soLuong * temp.donGia;
 
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn sản phẩm", "Đã có lỗi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            dtgridvwCTHD.Rows.Add(temp.maSP, temp.soLuong, temp.donGia, temp.thanhTien);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Số lượng tồn kho không đủ " + numericSoLuong.Value.ToString() + " sản phẩm để mua. Hiện tại, nhà kho còn" + db.DanhMucVanPhongPhams.Find(dtgrdvwSP_HD.SelectedRows[0].Cells[0].Value.ToString()).soLuongTon.Value.ToString() + " sản phẩm");
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng chọn sản phẩm", "Đã có lỗi", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
         }
 
@@ -111,9 +141,9 @@ namespace QLHS
                 if (row.IsNewRow) continue;
                 CT_HD temp = new CT_HD();
                 temp.maHD = txtmaHD.Text;
-                temp.maSP = row.Cells[1].Value?.ToString();
-                temp.soLuong = Convert.ToInt32(row.Cells[2].Value);
-                temp.donGia = Convert.ToInt32(row.Cells[3].Value);
+                temp.maSP = row.Cells[0].Value?.ToString();
+                temp.soLuong = Convert.ToInt32(row.Cells[1].Value);
+                temp.donGia = Convert.ToInt32(row.Cells[2].Value);
                 temp.thanhTien = temp.soLuong * temp.donGia;
                 total += Convert.ToInt32(temp.thanhTien);
                 using(var db = new BookstoreEntities1())
@@ -128,6 +158,8 @@ namespace QLHS
                 t.tongTien = total;
                 db.SaveChanges();
             }
+            MessageBox.Show("Đã thêm thành công hóa đơn.");
+            this.Close();
             
         }
 

@@ -309,6 +309,11 @@ namespace QLHS
             // 
             this.numericSoLuong.BackColor = System.Drawing.Color.PowderBlue;
             this.numericSoLuong.Location = new System.Drawing.Point(244, 251);
+            this.numericSoLuong.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.numericSoLuong.Name = "numericSoLuong";
             this.numericSoLuong.Size = new System.Drawing.Size(120, 26);
             this.numericSoLuong.TabIndex = 17;
