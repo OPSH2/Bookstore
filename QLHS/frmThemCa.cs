@@ -27,6 +27,7 @@ namespace QLHS
 
         private void loadCaSang()
         {
+            lvwMorningShift.Items.Clear();
             con = new SqlConnection(cs);
             con.Open();
             adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where ct.maCaTruc like '%CAS"+ Form1.shiftdate.Year.ToString() + Form1.shiftdate.Month.ToString() + Form1.shiftdate.Day.ToString() + "%' ", con);
@@ -45,6 +46,7 @@ namespace QLHS
 
         private void loadCaToi()
         {
+            lvwEveningShift.Items.Clear();
             con = new SqlConnection(cs);
             con.Open();
             adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where ct.maCaTruc like '%CAT" + Form1.shiftdate.Year.ToString() + Form1.shiftdate.Month.ToString() + Form1.shiftdate.Day.ToString() + "%' ", con);
@@ -63,6 +65,7 @@ namespace QLHS
 
         private void loadCaChieu()
         {
+            lvwAfternoonShift.Items.Clear();
             con = new SqlConnection(cs);
             con.Open();
             adapt = new SqlDataAdapter("select tenNV, gioMoCa from CaLamViec c join CT_CaLamViec ct on c.maCaTruc =ct.maCaTruc join NhanVien nv on ct.maNV = nv.maNV where ct.maCaTruc like '%CAC" + Form1.shiftdate.Year.ToString() + Form1.shiftdate.Month.ToString() + Form1.shiftdate.Day.ToString() + "%' ", con);
